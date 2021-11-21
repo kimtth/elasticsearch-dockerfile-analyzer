@@ -105,7 +105,7 @@ GET /your_index_name/_settings
 GET /your_index_name/_analyze
 {
   "text": "梅酒が好き", 
-  "analyzer": "my_ja_analyzer"
+  "analyzer": "my_ja"
 }
 ```
 
@@ -171,7 +171,7 @@ GET /your_index_name/_settings
 
 ## Ubuntu Swap Memory
 
-- Create Swap Memory : Elastic requires at least 2GB Memory. 
+- Create Swap Memory : ElasticSearch requires at least 2GB Memory. 
 
 ```bash
 ~$ sudo fallocate -l 2G /swapfile
@@ -197,7 +197,7 @@ total used free shared buff/cache availableMem:
 
 https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
 
-## Japanese Tokenizer (How to directly install into Ubuntu, not through Docker)
+## Japanese Tokenizer (Directly install into Ubuntu, not through Docker)
 
 ```bash
 $ git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
